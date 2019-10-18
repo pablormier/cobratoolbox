@@ -31,6 +31,7 @@ if isscalar(cobraParams.logFile)
         % any other scalar will be assumed to indicate no logging
         logFile = 0;
         logToFile = false;
+        cplexProblem.DisplayFunc = [];
     end
 else
     logFile = fopen(cobraParams.logFile,'a');
